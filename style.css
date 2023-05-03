@@ -1,0 +1,292 @@
+.landingBackground{
+    height: 500px;
+}
+.imageStack{
+    margin-left: 80px;
+}
+@media (max-width:550px) {
+    /* Navbar */
+    nav img{
+        width: 100px;
+        height: 25px;
+    }
+    #brand{
+        padding: 0px;
+        margin: 10px;
+    }
+    nav button{
+        margin-right: 10px;
+    }
+
+    /* Landing Page */
+    .landingBackground div{
+        position: relative;
+        width: 100%;
+        left: 0;
+        box-shadow: none;
+    }
+    .landingBackground{
+        display: block;
+        height: 200px;
+        position: flex;
+    }
+    .landing{
+        flex-direction: column;
+        height: 750px;
+    }
+    .landing .left{
+        width: 100%;
+        position: relative;
+    }
+
+    .landing .right{
+        width: 100%;
+    }
+    #videoDiv{
+        position: relative;
+        top: 0;
+        left: 10%;
+        margin-top: 150px;
+    }
+    .landing .left video{
+        width: 300px;
+        height: 200px;
+    }
+    .clients-logo{
+        display: flex;
+        margin-top: 10px;
+        overflow-y: scroll;
+    }
+    .clients-logo img{
+        width: 116px;
+        height: 50px;
+        margin: 0px 10px;
+    }
+    .clients span{
+        font-size: 14px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .automationBlock{
+        width: 100%;
+        margin-top: 120px;
+        border: none;
+        box-shadow: none;
+    }
+    .automationBlock h2{
+        font-size: 14px;
+    }
+    .automationBlock p{
+        font-size: 12px;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .automationBlock div{
+        width: 50px;
+        height: 4px;
+        margin: 0px;
+    }
+    .automationBlock a{
+        font-size: 10px;
+    }
+
+    /* Product Page*/
+    #Product{
+        height: 300px;
+    }
+    #Product a img{
+        width: 20px;
+        height: 20px;
+    }
+    #Product h1{
+        width: 100%;
+        font-size: 18px;
+    }
+    #Product .card,.card-h img{
+        width: 200px;
+        height: 100px;
+    }
+    #Product .card-s img{
+        width: 30px;
+        height: 30px;
+    }
+    #Product .card-h{
+        display: none;
+    }
+    #Product .allCard{
+        margin-top: 40px;
+        align-items: center;
+    }
+
+    /* About */
+    #About{
+        height: 600px;   
+    }
+    #About h1{
+        font-size: 18px;
+    }
+    #About .about{
+        margin: 0px;
+        padding: 0px;
+    }
+    .about{
+        flex-direction: column;
+        width: 100%;
+    }
+    .imageStack{
+        margin-left: 180px;
+    }
+    .imageStack img{
+        width: 150px;
+    }
+    .about div{
+        width: 100%;
+    }
+    .about div h2{
+        font-size: 16px;
+        margin-left: 30px;
+    }
+    .about div svg rect{
+        height: 40px;
+        width: 250px;
+    }
+    .about div div{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+        color: rgb(31, 31, 31);
+    }
+    #Business{
+        font-size: 12px;
+    }
+
+    /* Contact */
+    #Contact h1{
+        font-size: 18px;
+        margin: 5px;
+    }
+    #Contact .container{
+        margin: 0px;
+        padding: 15px;
+    }
+    #Contact .contactLine{
+        margin: 0px;
+        padding: 0%;
+    }
+    #Contact section{
+        flex-direction: column;
+    }
+    #Contact section input{
+        width: 300px;
+    }
+    #Contact section textarea{
+        width: 300px;
+    }
+    section .left .sendButton{
+        width: 300px;
+    }
+    section .right{
+        margin-top: 20px;
+    }
+    section .right svg{
+        width: 50px;
+        height: 100px;
+    }
+    section .right p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    #map{
+        margin-left: -10px;
+        height: 200px;
+        width: 350px;
+    }
+    section .container div{
+        height: 200px;
+    }
+    .contacts{
+        flex-direction: column;
+    }
+    .contacts div{
+        margin: 10px;
+    }
+}
+@media (max-width:850px) and (min-width:550px){
+    .automationBlock{
+        height: 10%;
+    }
+
+    .automationBlock h2{
+        font-size: 14px;
+    }
+    .automationBlock p{
+        font-size: 10px;
+    }
+    .clients span{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .clients img{
+        width: 80px;
+        height: 60px;
+    }
+    .clients{
+        height: 120vh;
+    }
+    #Product{
+        height: 600px;
+    }
+    .imageStack{
+        margin-left: 0px;
+    }
+    .about div{
+        width:350px;
+        font-size: 13px;
+    }
+    .footerSection{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+
+@media (min-width:850px) and (max-width:1000px){
+    .automationBlock{
+        height: 30%;
+    }
+    .automationBlock p{
+        font-size: 12px;
+    }
+    .automationBlock h2{
+        font-size: 16px;
+    }
+    .clients span{
+        font-size: 20px;
+    }
+    .clients img{
+        width: 100px;
+        height: 80px;
+    }
+    .clients{
+        height: 100vh;
+    }
+    .imageStack{
+        margin-left: 5px;
+    }
+    .about div{
+        width:400px;
+        font-size: 14px;
+    }
+    .footerSection{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #Contact{
+        height: 180vh;
+    }
+    .footerSection .right{
+        margin-top: 30px;
+    }
+}
+
