@@ -4,6 +4,14 @@
 .imageStack{
     margin-left: 80px;
 }
+.card{
+    width: 408px;
+    height: 350px;
+}
+.card-h{
+    width: 300px;
+    height: 230px;
+}
 @media (max-width:550px) {
     /* Navbar */
     nav img{
@@ -41,6 +49,8 @@
 
     .landing .right{
         width: 100%;
+        z-index: 2;
+        overflow: scroll;
     }
     #videoDiv{
         position: relative;
@@ -55,7 +65,7 @@
     .clients-logo{
         display: flex;
         margin-top: 10px;
-        overflow-y: scroll;
+        overflow-x:scroll;
     }
     .clients-logo img{
         width: 116px;
@@ -161,7 +171,7 @@
         font-size: 12px;
     }
 
-    /* Contact */
+    /* Contact Footer */
     #Contact h1{
         font-size: 18px;
         margin: 5px;
@@ -198,7 +208,7 @@
         font-size: 14px;
     }
     #map{
-        margin-left: -10px;
+        margin-left: -50px;
         height: 200px;
         width: 350px;
     }
@@ -212,7 +222,17 @@
         margin: 10px;
     }
 }
-@media (max-width:850px) and (min-width:550px){
+@media (max-width:900px) and (min-width:550px){
+
+  
+    /* Landing Page */
+
+    .landingBackground{
+        display: block;
+        height: 400px;
+        position: flex;
+    }
+
     .automationBlock{
         height: 10%;
     }
@@ -224,15 +244,15 @@
         font-size: 10px;
     }
     .clients span{
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
     .clients img{
-        width: 80px;
-        height: 60px;
+        width: 120px;
+        height: 80px;
     }
     .clients{
-        height: 120vh;
+        height: 70vh;
     }
     #Product{
         height: 600px;
@@ -240,9 +260,19 @@
     .imageStack{
         margin-left: 0px;
     }
+    .imageStack img{
+        width: 250px;
+    }
     .about div{
         width:350px;
         font-size: 13px;
+    }
+    #About .about{
+        margin: 10px;
+        padding: 20px;
+    }
+    #About{
+        height: 600px;
     }
     .footerSection{
         flex-wrap: wrap;

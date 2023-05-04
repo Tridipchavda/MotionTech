@@ -6,16 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MotionTech</title>
+
+  <!--Tailwind CSS-->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script defers src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
   <script defer src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <script defer src="script.js"></script>
 </head>
 
-<body onload="initMap()">
+<body style="overflow-x:hidden;" onload="initMap()">
 
   <!-- Navbar -->
   <nav class="bg-gray-200 border-gray-200 dark:bg-gray-900">
@@ -23,8 +27,8 @@
       <a id="brand" href="#" class="flex items-center mt-2 ml-10">
         <img src="Assets/Motiontech.png" width="208px" height="53px" />
       </a>
-      <button data-collapse-toggle="navbar-default" type="button"
-        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      <button id="menu-button" data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
         aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -34,12 +38,12 @@
             clip-rule="evenodd"></path>
         </svg>
       </button>
-      <div class=" hidden w-full md:block md:w-auto text-lg " id="navbar-default">
+      <div class=" hidden w-full md:block md:w-auto text-lg " id="menu">
         <ul
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
             <a href="#"
-              class="block py-2 ml-[15px] mr-[15px] text-white rounded md:bg-transparent md:text-red-500 md:hover:text-red-700 md:p-0 dark:text-white md:dark:text-blue-500"
+              class="block py-2 ml-[15px] mr-[15px] rounded md:bg-transparent md:text-red-500 md:hover:text-red-700 md:p-0 dark:text-white md:dark:text-blue-500"
               aria-current="page">Home</a>
           </li>
           <li>
@@ -90,7 +94,7 @@
     <div class="right clients w-1/4 p-4 max-h-[140vh] overflow-scroll">
       <center>
         <span class="pb-5 tracking-wider text-[30px] text-red-600">OUR CLIENTS</span>
-        <div class="clients-logo">
+        <div class="clients-logo overflow-scroll">
         <img src="Assets/Clients/1.png" width="150" height="94">
         <img src="Assets/Clients/2.png" width="150" height="94">
         <img src="Assets/Clients/3.png" width="150" height="94">
@@ -117,19 +121,19 @@
 
     <center>
       <div class="allCard snap-x w-full flex justify-center items-center my-[100px]">
-        <div class="card-s snap-center mx-5 my-3">
+        <div class="card-s snap-center mx-5 my-3" onclick="slide('left')">
           <img class="rounded-lg" src="Assets/left.png" />
         </div>
-        <div class="card-h snap-center mx-5 my-3 ">
+        <div id="p1" class="card-h snap-center mx-5 my-3 ">
           <img class="rounded-lg" src="Assets/Product2.png" />
         </div>
-        <div class="card snap-center mx-5 my-3">
+        <div id="p2" class="card snap-center mx-5 my-3">
           <img class="rounded-lg" src="Assets/Product1.png" />
         </div>
-        <div class="card-h snap-center mx-5 my-3">
+        <div id="p3" class="card-h snap-center mx-5 my-3">
           <img class="rounded-lg" src="Assets/Product2.png" />
         </div>
-        <div class="card-s snap-center mx-5 my-3">
+        <div class="card-s snap-center mx-5 my-3" onclick="slide('right')">
           <img class="rounded-lg" src="Assets/right.png" />
         </div>
 
