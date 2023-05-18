@@ -12,6 +12,12 @@
     width: 300px;
     height: 230px;
 }
+.clients-logo{
+    margin-top: 20px;
+    overflow-x:scroll;
+    display: flex;
+    justify-content: space-around;
+}
 @media (max-width:550px) {
     /* Navbar */
     nav img{
@@ -40,7 +46,6 @@
     }
     .landing{
         flex-direction: column;
-        height: 750px;
     }
     .landing .left{
         width: 100%;
@@ -48,9 +53,11 @@
     }
 
     .landing .right{
+        margin-top: 440px;
         width: 100%;
         z-index: 2;
-        overflow: scroll;
+        overflow: none;
+        margin-bottom: 0px;
     }
     #videoDiv{
         position: relative;
@@ -63,14 +70,20 @@
         height: 200px;
     }
     .clients-logo{
-        display: flex;
         margin-top: 10px;
-        overflow-x:scroll;
+        overflow:scroll;
+        width: 100%;
     }
-    .clients-logo img{
-        width: 116px;
-        height: 50px;
+    .clients{
+        overflow: hidden;
+    }
+    .clients img{
+        width: 70px;
+        height: 46px;
         margin: 0px 10px;
+    }
+    #firstImg{
+        margin-left:350px;
     }
     .clients span{
         font-size: 14px;
@@ -79,7 +92,7 @@
     }
     .automationBlock{
         width: 100%;
-        margin-top: 120px;
+        margin-top: 0px;
         border: none;
         box-shadow: none;
     }
@@ -248,11 +261,8 @@
         margin-bottom: 10px;
     }
     .clients img{
-        width: 120px;
-        height: 80px;
-    }
-    .clients{
-        height: 70vh;
+        width: 70px;
+        height: 46px;
     }
     #Product{
         height: 600px;
@@ -295,11 +305,8 @@
         font-size: 20px;
     }
     .clients img{
-        width: 100px;
-        height: 80px;
-    }
-    .clients{
-        height: 100vh;
+        width: 80px;
+        height: 56px;
     }
     .imageStack{
         margin-left: 5px;
