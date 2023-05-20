@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-around;
 }
+
 @media (max-width:550px) {
     /* Navbar */
     nav img{
@@ -39,6 +40,15 @@
         left: 0;
         box-shadow: none;
     }
+    #homeContent{
+        top: 0%;
+    }
+    .sliderImg{
+        margin-top: 200px;
+    }
+    .sliderImg img{
+        height: 400px;
+    }
     .landingBackground{
         display: block;
         height: 200px;
@@ -51,9 +61,8 @@
         width: 100%;
         position: relative;
     }
-
     .landing .right{
-        margin-top: 440px;
+        margin-top: 500px;
         width: 100%;
         z-index: 2;
         overflow: none;
@@ -61,9 +70,9 @@
     }
     #videoDiv{
         position: relative;
-        top: 0;
+        margin-top: 0px;
+        top: 0%;
         left: 10%;
-        margin-top: 150px;
     }
     .landing .left video{
         width: 300px;
@@ -73,6 +82,8 @@
         margin-top: 10px;
         overflow:scroll;
         width: 100%;
+        padding: 5px 0px;
+
     }
     .clients{
         overflow: hidden;
@@ -245,7 +256,17 @@
         height: 400px;
         position: flex;
     }
-
+  
+    .sliderImg{
+        margin-top: -100px;
+    }
+    .sliderImg img{
+        height: 400px;
+    }
+    #videoDiv{
+        width: 300px;
+        height: 150px;
+    }
     .automationBlock{
         height: 10%;
     }

@@ -13,7 +13,7 @@
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
   <script defer src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-
+   <script defer src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
   <script defer src="script.js"></script>
@@ -65,14 +65,46 @@
   </nav>
 
   <!-- The Landing -->
-  <div class="landing flex-col divide-y">
-    <div class="left h-3/4">
-      <div class="landingBackground relative bg-cover bg-center" style=" background-image: url('Assets/background.png')">
-        <div class="absolute top-[85%] left-[5%] right-0 flex items-center justify-left">
-          <div class="automationBlock bg-white p-8 rounded-sm shadow-lg w-[45%] h-[45%]">
+  <div class="landing flex-col">
+    <div class="left">
+
+      <div class="landingBackground relative">
+        <div id="default-carousel" class="relative" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div class="overflow-hidden relative sm:h-[500px] xl:h-[500px] 2xl:h-[500px]">
+              <!-- Item 1 -->
+              <div class="sliderImg hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="Assets/background.png" class="block absolute top-1/2 left-1/2 w-full  -translate-x-1/2 -translate-y-1/2" alt="...">
+              </div>
+              <!-- Item 2 -->
+              <div class="sliderImg hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="Assets/background.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+              </div>
+              <!-- Item 3 -->
+              <div class="sliderImg hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="Assets/background.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+              </div>
+          </div>
+          <!-- Slider controls -->
+          <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                  <span class="hidden">Previous</span>
+              </span>
+          </button>
+          <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  <span class="hidden">Next</span>
+              </span>
+          </button>
+      </div>
+
+        <div id="homeContent" class="absolute top-[85%] left-[5%] right-0 flex items-center justify-left">
+          <div class="z-[100] automationBlock bg-white p-8 rounded-sm shadow-lg w-[45%] h-[45%]">
             <h2 class="text-2xl font-bold">MotionTech Automation Supplier</h2>
             <div class="ml-5 mt-2 mb-6 w-[100px] h-1 bg-red-500"></div>
-            <p class="mt-2 px-3 mb-[90px] text-justify">
+            <p class="mt-2 px-3 mb-[90px] text-lg text-justify">
               MOTIONTECH has become a respected name in the Indian Automation Industry
               by bringing forth superior brands of automation products, We are a Supplier
               and Dealer of Stepper Motors and Drives, Rotary Encoder, Sensors, SMPS, and CNC Machine Repair Services,
@@ -87,11 +119,11 @@
               type="video/mp4">
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> 
       </div>
 
     </div>
-    <div class="right clients p-4 mt-[400px] overflow-y-scroll my-5">
+    <div class="right clients mt-[400px] p-4 overflow-y-scroll my-5">
       <center>
         
         <span class="pb-5 tracking-wider text-[30px] text-red-600">OUR CLIENTS</span>
@@ -197,7 +229,7 @@
   <!-- Footer -->
   <footer id="Contact" class="bg-gray-300 min-h-[100vh] text-white">
 
-    <div class="container mx-auto py-8 px-7 bg-gray-300">
+    <div class="container mx-auto py-8 px-7 bg-gray-300" >
       <section class="footerSection flex -mx-2">
         <div class="left w-full lg:w-1/2 px-2 mb-4 ml-5">
           <div class="flex flex-row w-[100vw] mb-5 justify-between">
