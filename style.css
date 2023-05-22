@@ -19,6 +19,7 @@
     justify-content: space-around;
 }
 
+
 @media (max-width:550px) {
     /* Navbar */
     nav img{
@@ -44,10 +45,12 @@
         top: 0%;
     }
     .sliderImg{
-        margin-top: 200px;
+        margin-top: 190px;
     }
-    .sliderImg img{
-        height: 400px;
+    .bg{
+        object-fit:inherit; 
+        width: 100%; 
+        margin-top: -100px;
     }
     .landingBackground{
         display: block;
