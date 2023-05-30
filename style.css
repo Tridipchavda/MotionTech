@@ -151,9 +151,10 @@
     #Product .card,.card-h img{
         width: 250px;
         height: 100px;
+        margin: 0px 5px;
     }
     #Product .card-s img{
-        margin-top: 80px;
+        margin-top: 100px;
         width: 30px;
         height: 30px;
     }
@@ -161,7 +162,7 @@
         display: none;
     }
     #Product .allCard{
-        margin-top: 10px;
+        margin-top: 0px;
         align-items: center;
     }
     #Product .flex a{
