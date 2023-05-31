@@ -27,7 +27,6 @@
     margin-top: 20px;
     overflow-x:scroll;
     display: flex;
-    /* justify-content: space-around; */
 }
 .clients-logo img{
     margin:0px 25px;
@@ -161,10 +160,16 @@
         width: 100%;
         font-size: 18px;
     }
-    #Product .card,.card-h img{
-        width: 250px;
-        height: 100px;
+    #Product .card img{
+        width: 210px;
+        height: 200px;
         margin: 0px 5px;
+    }
+    #Product .card{
+        width: 210px;
+        height: 100px;
+        overflow: unset;
+    
     }
     #Product .card-s img{
         margin-top: 90px;
@@ -324,6 +329,25 @@
     }
     #Product{
         height: 600px;
+    }
+    #Product .card img{
+        width: 250px;
+        height: 230px;
+        margin: 0px 5px;
+    }
+    #Product .card-h img {
+        width: 166px;
+        height: 177px;
+      }
+    #Product .card{
+        width: 560px;
+        height: 220px;
+        overflow: unset;
+    }
+    #Product .card-h{
+        width: 370px;
+        height: 175px;
+        overflow: unset;
     }
     .imageStack{
         margin-left: 0px;
