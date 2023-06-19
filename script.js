@@ -12,7 +12,6 @@ var p8 = document.getElementById("p8");
 function slide(side) {
     var stringNum; 
     stringNum = p1.childNodes[1].src.split("Products/Product")[1].split(".png");
-    console.log(stringNum);
     let num1 = parseInt(stringNum[0]);
 
     stringNum = p2.childNodes[1].src.split("Products/Product")[1].split(".png");
@@ -68,3 +67,4 @@ const menu = document.querySelector('#menu');
 button.addEventListener('click', () => {
   menu.classList.toggle('hidden');
 });
+
